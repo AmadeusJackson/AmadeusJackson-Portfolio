@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for Amadeus Jackson, a frontend developer building thoughtful web, mobile, and robotics tools."
+    />
+    <title>Amadeus Jackson | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Amadeus Jackson home">
+        <span class="brand-mark">AJ</span>
+        <span>Amadeus Jackson</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="stats.html">GitHub Stats</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Frontend Developer / Student Builder</p>
+          <h1>Building polished interfaces for real ideas, teams, and tools.</h1>
+          <p class="hero-text">
+            I am Amadeus Jackson, a frontend developer heading into 12th grade. I build clean,
+            useful web and mobile experiences, and I use AI effectively as a creative coding partner
+            to move from idea to working product.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button ghost" href="https://github.com/AmadeusJackson" target="_blank" rel="noreferrer">
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Portfolio visual summary">
+          <div class="portrait-card">
+            <img
+              src="https://avatars.githubusercontent.com/u/196243572?v=4"
+              alt="GitHub avatar for Amadeus Jackson"
+            />
+            <div>
+              <span class="status-dot"></span>
+              <p>Available for frontend work</p>
+            </div>
+          </div>
+          <div class="signal-panel">
+            <span class="mono">featured_work</span>
+            <strong>4</strong>
+            <p>Projects across SwiftUI, React Native, Google Apps Script, and web fundamentals.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell split-band reveal">
+        <div>
+          <p class="eyebrow">Portfolio Focus</p>
+          <h2>Elegant, futuristic, and built for showing the work.</h2>
+        </div>
+        <p>
+          This site highlights completed projects, one in-progress robotics platform, the decisions
+          behind each build, and the skills I am sharpening as I grow into professional frontend work.
+        </p>
+      </section>
+
+      <section class="section-shell project-preview">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Work that solves real problems.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="card-topline">
+              <span>SwiftUI</span>
+              <span>Complete</span>
+            </div>
+            <h3>Daily Joy</h3>
+            <p>
+              A gratitude journaling iOS app with moments, streaks, achievements, privacy states,
+              and celebration animations.
+            </p>
+            <a href="projects.html#daily-joy">Read case study</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="card-topline">
+              <span>Robotics Ops</span>
+              <span>Complete</span>
+            </div>
+            <h3>Pit Scheduler</h3>
+            <p>
+              A Google Apps Script scheduler that posts robotics team shifts to Slack and sends
+              automated reminders.
+            </p>
+            <a href="projects.html#pit-scheduler">Read case study</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="card-topline">
+              <span>React Native</span>
+              <span>In Progress</span>
+            </div>
+            <h3>MECO Mission Control Mobile</h3>
+            <p>
+              A mobile operations dashboard for robotics planning, task state, QA, meetings, and
+              manufacturing visibility.
+            </p>
+            <a href="projects.html#meco-mission-control">Read case study</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Amadeus Jackson.</p>
+      <div>
+        <a href="mailto:nottherealmozart@gmail.com">Email</a>
+        <a href="https://github.com/AmadeusJackson" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

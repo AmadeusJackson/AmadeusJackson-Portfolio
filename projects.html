@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Amadeus Jackson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">AJ</span><span>Amadeus Jackson</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="stats.html">GitHub Stats</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero section-shell reveal">
+        <p class="eyebrow">Projects</p>
+        <h1>Featured work from personal builds and robotics team tools.</h1>
+        <p>
+          These projects show frontend interface work, product thinking, automation, and the ability
+          to build tools that support real users and teams.
+        </p>
+      </section>
+
+      <section class="section-shell case-list">
+        <article class="case-study reveal" id="daily-joy">
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Complete</p>
+              <h2>Daily Joy</h2>
+            </div>
+            <a href="https://github.com/AmadeusJackson/DailyJoyApp" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <p>
+            A SwiftUI iOS app that helps users build a gratitude habit by saving meaningful moments,
+            notes, photos, streaks, and memories.
+          </p>
+          <div class="detail-grid">
+            <div><h3>Tech Stack</h3><p>SwiftUI, SwiftData, iOS, accessibility APIs, local animations.</p></div>
+            <div><h3>Features</h3><p>Moment collection, searchable history, streak calendar, achievements, privacy locking, onboarding, and celebration effects.</p></div>
+            <div><h3>Challenge</h3><p>Balancing a rich emotional experience with organized app state, persistence, privacy UI, and reusable SwiftUI components.</p></div>
+            <div><h3>Lesson Learned</h3><p>Small details like motion, onboarding, and accessibility labels can make a simple app feel much more complete.</p></div>
+          </div>
+        </article>
+
+        <article class="case-study reveal" id="pit-scheduler">
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Complete / MECO Robotics</p>
+              <h2>Pit Scheduler</h2>
+            </div>
+            <a href="https://github.com/MECO-Robotics/Pit-Scheduler" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <p>
+            A Google Apps Script and Google Sheets scheduler for robotics teams that posts shift
+            schedules to Slack and sends individual reminders.
+          </p>
+          <div class="detail-grid">
+            <div><h3>Tech Stack</h3><p>Google Apps Script, Google Sheets, HTML, CSS, JavaScript, Slack API.</p></div>
+            <div><h3>Features</h3><p>Shift CRUD, CSV bulk import, Slack channel posts, DM reminders, printable schedules, and live on-duty panels.</p></div>
+            <div><h3>Challenge</h3><p>Coordinating spreadsheet data, time-based triggers, Slack user mapping, and a simple web UI in one Apps Script project.</p></div>
+            <div><h3>Lesson Learned</h3><p>Operational tools need clear data validation, dependable notifications, and workflows that are quick during busy events.</p></div>
+          </div>
+        </article>
+
+        <article class="case-study reveal" id="ela-coding">
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Complete</p>
+              <h2>Ela Coding</h2>
+            </div>
+            <a href="https://github.com/Ela-Coding/Ela-Coding" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <p>
+            A static web project inspired by <em>The Outsiders</em>, built around the idea of
+            breaking social barriers and encouraging community connection.
+          </p>
+          <div class="detail-grid">
+            <div><h3>Tech Stack</h3><p>HTML, CSS, JavaScript, embedded Jotform agent.</p></div>
+            <div><h3>Features</h3><p>Multi-link navigation, event cards, themed content, account/questionnaire pages, and a chat-style assistant embed.</p></div>
+            <div><h3>Challenge</h3><p>Turning a class or concept-driven idea into a real webpage with navigation, layout, and interactive pieces.</p></div>
+            <div><h3>Lesson Learned</h3><p>Even simple sites need strong structure, consistent styling, and careful naming to stay maintainable.</p></div>
+          </div>
+        </article>
+
+        <article class="case-study reveal" id="meco-mission-control">
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">In Progress / MECO Robotics</p>
+              <h2>MECO Mission Control Mobile</h2>
+            </div>
+            <a href="https://github.com/MECO-Robotics/meco-mission-control-mobile" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <p>
+            An Expo and React Native mobile client for robotics manufacturing, planning, meetings,
+            task visibility, and operations workflows.
+          </p>
+          <div class="detail-grid">
+            <div><h3>Tech Stack</h3><p>Expo, React Native, React, TypeScript, ESLint, EAS release automation.</p></div>
+            <div><h3>Features</h3><p>Subsystem dashboard, task workflow states, meeting RSVP and attendance, work-log visibility, manufacturing queues, and QA outcomes.</p></div>
+            <div><h3>Challenge</h3><p>Designing a mobile interface that can represent complex team operations without overwhelming students, mentors, or admins.</p></div>
+            <div><h3>Lesson Learned</h3><p>Large tools work best when data, roles, and UI states are planned early instead of added after screens are built.</p></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Amadeus Jackson.</p>
+      <div>
+        <a href="mailto:add-your-email@example.com">Email</a>
+        <a href="https://github.com/AmadeusJackson" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
