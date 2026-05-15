@@ -21,7 +21,7 @@
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="skills.html">Skills</a>
-        <a href="stats.html">GitHub Stats</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -48,11 +48,21 @@
             A SwiftUI iOS app that helps users build a gratitude habit by saving meaningful moments,
             notes, photos, streaks, and memories.
           </p>
+          <div class="project-origin">
+            <p class="eyebrow">Origin</p>
+            <p>
+              Daily Joy started as my first real coding project for the 2026 Swift Student Challenge.
+              The challenge pushed me to go beyond a tutorial mindset and build a complete app around
+              a real user experience: helping people notice and remember positive moments in their
+              day.
+            </p>
+          </div>
           <div class="detail-grid">
+            <div><h3>My Role</h3><p>Designed and built the full SwiftUI app experience, including the data model, screens, and interaction details.</p></div>
             <div><h3>Tech Stack</h3><p>SwiftUI, SwiftData, iOS, accessibility APIs, local animations.</p></div>
             <div><h3>Features</h3><p>Moment collection, searchable history, streak calendar, achievements, privacy locking, onboarding, and celebration effects.</p></div>
-            <div><h3>Challenge</h3><p>Balancing a rich emotional experience with organized app state, persistence, privacy UI, and reusable SwiftUI components.</p></div>
-            <div><h3>Lesson Learned</h3><p>Small details like motion, onboarding, and accessibility labels can make a simple app feel much more complete.</p></div>
+            <div><h3>Challenge</h3><p>Balancing emotional design with organized app state, persistence, privacy UI, and reusable SwiftUI components.</p></div>
+            <div><h3>Lesson Learned</h3><p>Finishing the app taught me that strong software is part code, part product thinking, and part attention to detail.</p></div>
           </div>
         </article>
 
@@ -62,13 +72,23 @@
               <p class="eyebrow">Complete / MECO Robotics</p>
               <h2>Pit Scheduler</h2>
             </div>
-            <a href="https://github.com/MECO-Robotics/Pit-Scheduler" target="_blank" rel="noreferrer">GitHub</a>
+            <span class="repo-note">Private team repo</span>
           </div>
           <p>
             A Google Apps Script and Google Sheets scheduler for robotics teams that posts shift
             schedules to Slack and sends individual reminders.
           </p>
+          <div class="project-origin">
+            <p class="eyebrow">Problem</p>
+            <p>
+              During robotics competitions, team members can get caught up in the rush of the event
+              and lose track of when their pit shift ends. Pit Scheduler was built to make shift
+              timing clear, remind people when they need to rotate out, and keep the pit organized
+              without someone manually chasing everyone down.
+            </p>
+          </div>
           <div class="detail-grid">
+            <div><h3>My Role</h3><p>Built the scheduler interface and Slack reminder automation for my robotics team.</p></div>
             <div><h3>Tech Stack</h3><p>Google Apps Script, Google Sheets, HTML, CSS, JavaScript, Slack API.</p></div>
             <div><h3>Features</h3><p>Shift CRUD, CSV bulk import, Slack channel posts, DM reminders, printable schedules, and live on-duty panels.</p></div>
             <div><h3>Challenge</h3><p>Coordinating spreadsheet data, time-based triggers, Slack user mapping, and a simple web UI in one Apps Script project.</p></div>
@@ -88,11 +108,21 @@
             A static web project inspired by <em>The Outsiders</em>, built around the idea of
             breaking social barriers and encouraging community connection.
           </p>
+          <div class="project-origin">
+            <p class="eyebrow">Context</p>
+            <p>
+              This started as an English class assignment to storyboard an app that would help people
+              connect on a deeper level than shared surface interests. Instead of stopping at the
+              storyboard, my group decided to turn the idea into a real website. I built the Jotform
+              agent, account page, and questionnaire.
+            </p>
+          </div>
           <div class="detail-grid">
+            <div><h3>My Role</h3><p>Built the Jotform agent, account page, and questionnaire for the website.</p></div>
             <div><h3>Tech Stack</h3><p>HTML, CSS, JavaScript, embedded Jotform agent.</p></div>
             <div><h3>Features</h3><p>Multi-link navigation, event cards, themed content, account/questionnaire pages, and a chat-style assistant embed.</p></div>
-            <div><h3>Challenge</h3><p>Turning a class or concept-driven idea into a real webpage with navigation, layout, and interactive pieces.</p></div>
-            <div><h3>Lesson Learned</h3><p>Even simple sites need strong structure, consistent styling, and careful naming to stay maintainable.</p></div>
+            <div><h3>Challenge</h3><p>Learning enough HTML and CSS to contribute quickly while coordinating across time zones with only one week to finish.</p></div>
+            <div><h3>Lesson Learned</h3><p>I learned how deadlines, communication, and basic web structure matter just as much as the code itself.</p></div>
           </div>
         </article>
 
@@ -108,11 +138,22 @@
             An Expo and React Native mobile client for robotics manufacturing, planning, meetings,
             task visibility, and operations workflows.
           </p>
+          <div class="project-origin">
+            <p class="eyebrow">Vision</p>
+            <p>
+              MECO Mission Control Mobile is being built because our robotics team has tried many
+              tools that worked, but not in one shared place and not exactly the way our team needed.
+              The goal is to create one team operations app for everyone, from highly involved
+              students to mentors who only need to help with specific planning tasks.
+            </p>
+          </div>
           <div class="detail-grid">
+            <div><h3>My Role</h3><p>Building mobile app flows and learning how to connect the experience to server-backed authentication and role-based features.</p></div>
             <div><h3>Tech Stack</h3><p>Expo, React Native, React, TypeScript, ESLint, EAS release automation.</p></div>
             <div><h3>Features</h3><p>Subsystem dashboard, task workflow states, meeting RSVP and attendance, work-log visibility, manufacturing queues, and QA outcomes.</p></div>
-            <div><h3>Challenge</h3><p>Designing a mobile interface that can represent complex team operations without overwhelming students, mentors, or admins.</p></div>
-            <div><h3>Lesson Learned</h3><p>Large tools work best when data, roles, and UI states are planned early instead of added after screens are built.</p></div>
+            <div><h3>Current Status</h3><p>Core flows that do not depend on login are working. Google SSO and role-based views for groups like programming and mechanical are planned next.</p></div>
+            <div><h3>Challenge</h3><p>Building my first project that needs a server, authentication, and role-aware behavior across different types of users.</p></div>
+            <div><h3>Lesson Learned</h3><p>I learned how mobile apps connect to server-backed features and how to approach Google SSO implementation with AI as a learning partner.</p></div>
           </div>
         </article>
       </section>
@@ -121,7 +162,7 @@
     <footer class="site-footer">
       <p>Built by Amadeus Jackson.</p>
       <div>
-        <a href="mailto:add-your-email@example.com">Email</a>
+        <a href="mailto:nottherealmozart@gmail.com">Email</a>
         <a href="https://github.com/AmadeusJackson" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </footer>

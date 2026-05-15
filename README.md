@@ -8,7 +8,7 @@ Static multi-page portfolio for GitHub Pages.
 - `about.html` - bio and background
 - `projects.html` - featured project case studies
 - `skills.html` - skills overview
-- `stats.html` - GitHub profile and portfolio stats
+- `contact.html` - contact links and current focus
 
 ## Deployment
 
@@ -22,4 +22,4 @@ In GitHub:
 
 ## Customization
 
-Replace `add-your-email@example.com` in the HTML files with the preferred contact email when it is ready.
+The site currently uses `nottherealmozart@gmail.com` as the contact email.

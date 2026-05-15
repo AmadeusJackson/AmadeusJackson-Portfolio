@@ -42,6 +42,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  /*border-radius: 300px;*/
 }
 
 .site-header {
@@ -167,8 +168,7 @@ h3 {
 
 .hero-text,
 .page-hero p,
-.split-band p,
-.github-panel p {
+.split-band p {
   color: var(--muted);
   font-size: 1.08rem;
 }
@@ -222,8 +222,8 @@ h3 {
 .about-card,
 .timeline,
 .skill-card,
-.stat-card,
-.github-panel {
+.contact-card,
+.availability-band {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -256,8 +256,7 @@ h3 {
 .case-study p,
 .about-card p,
 .timeline p,
-.skill-card p,
-.stat-card p {
+.skill-card p {
   color: var(--muted);
   margin-bottom: 0;
 }
@@ -270,13 +269,11 @@ h3 {
   box-shadow: 0 0 22px var(--teal);
 }
 
-.signal-panel,
-.stat-card {
+.signal-panel {
   padding: 22px;
 }
 
-.signal-panel strong,
-.stat-card strong {
+.signal-panel strong {
   display: block;
   margin: 10px 0;
   color: var(--gold);
@@ -304,7 +301,6 @@ h3 {
 
 .project-grid,
 .skill-grid,
-.stats-grid,
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -332,13 +328,23 @@ h3 {
 }
 
 .project-card a,
-.case-heading a {
+.case-heading a,
+.repo-note {
   width: fit-content;
   min-height: 40px;
   margin-top: 18px;
   border: 1px solid rgba(117, 230, 255, 0.36);
+  border-radius: 8px;
   color: var(--cyan);
   padding: 0 14px;
+}
+
+.repo-note {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-weight: 800;
 }
 
 .page-hero {
@@ -386,8 +392,20 @@ h3 {
   font-size: 1.03rem;
 }
 
+.project-origin {
+  max-width: 860px;
+  margin: 0 0 24px;
+  border-left: 3px solid var(--cyan);
+  padding: 2px 0 2px 18px;
+}
+
+.project-origin p:last-child {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
 .detail-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .detail-grid div {
@@ -396,22 +414,38 @@ h3 {
   padding-top: 16px;
 }
 
-.stats-grid {
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   margin-bottom: 22px;
 }
 
-.github-panel {
-  display: grid;
-  grid-template-columns: 0.72fr 1fr;
-  align-items: center;
-  gap: 26px;
+.contact-card {
   padding: 28px;
-  overflow: hidden;
 }
 
-.github-panel img {
-  width: 100%;
-  border-radius: 8px;
+.contact-card h2 {
+  margin-top: 12px;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+}
+
+.contact-card p,
+.availability-band p {
+  color: var(--muted);
+}
+
+.availability-band {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  gap: 30px;
+  padding: 42px 0 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  box-shadow: none;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
 }
 
 .site-footer {
@@ -480,7 +514,7 @@ h3 {
   .hero,
   .split-band,
   .about-layout,
-  .github-panel {
+  .availability-band {
     grid-template-columns: 1fr;
   }
 
@@ -491,7 +525,7 @@ h3 {
 
   .project-grid,
   .skill-grid,
-  .stats-grid,
+  .contact-grid,
   .detail-grid {
     grid-template-columns: 1fr;
   }
@@ -520,7 +554,7 @@ h3 {
   .hero-text,
   .page-hero p,
   .split-band p,
-  .github-panel p {
+  .availability-band p {
     font-size: 1rem;
   }
 }
